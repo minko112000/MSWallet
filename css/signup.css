@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-box {
+  margin-top: 12px;
+  height: 100px;
+  width: 100px;
+  background: #10131c;
+  border-radius: 50%;
+  border: 1px solid #313539;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.img-box > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.app-name {
+  height: 40px;
+  padding: 5px;
+  margin-top: 12px;
+  background: linear-gradient(to right, #5621cf, #7d4282, #c83e8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body > span {
+  opacity: .7;
+  color: #919599;
+}
+
+.form-container {
+  margin-top: 22px;
+  width: 96%;
+}
+
+.form-container > div {
+  height: 64px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 1.2em;
+  color: #919599;
+  margin-top: 16px;
+}
+
+.form-container > div > label {
+  position: absolute;
+  top: 18px;
+  left: 11px;
+  transition: all .5s;
+  background: #10131c;
+  padding: 0 5px;
+  z-index: -1;
+  font-size: 1em;
+}
+
+.form-container > div > input {
+  height: 55px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #313539;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-container > div > .fa-eye {
+  position: absolute;
+  top: 22px;
+  right: 15px;
+  
+}
+
+.eye-close:after {
+  content: '/';
+  position: absolute;
+  font-size: 1.4em;
+  top: -5.6px;
+  left: 6px;
+}
+
+.err {
+  position: absolute;
+  bottom: -12px;
+  left: 12px;
+  font-size: .5em;
+  color: #dd1d1d;
+  z-index: 5;
+}
+
+#signup-btn {
+  height: 55px;
+  width: 100%;
+  margin-top: 22px;
+  border-radius: 25px;
+  border: 1px solid #313539;
+  background: #5621cf;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 1px;
+  color: #919599;
+  font-weight: 800;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-div {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33px;
+}
+
+.login-div > a {
+  margin-left: 5px;
+  color: #5621cf;
+  cursor: pointer;
+  user-select: none;
+}

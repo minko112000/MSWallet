@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.err_login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background: #dd1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  font-size: 1em;
+  border-bottom: 1px solid #313539;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all .5s;
+  transform: translateY(-100%);
+}
+
+.err_login_hide {
+  transform: translateY(0%);
+}
+
+.img-box {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #313539;
+  margin-top: 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.img-box > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.app-name {
+  height: 40px;
+  padding: 5px;
+  margin-top: 12px;
+  background: linear-gradient(to right, #5621cf, #7d4282, #c83e8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body > span {
+  opacity: .7;
+  color: #919599;
+}
+
+form {
+  height: 250px;
+  width: 95%;
+  background: #10131c;
+  border-radius: 4px;
+  margin-top: 25px;
+  padding: 6px;
+}
+
+form > div {
+  border-radius: 3px;
+  height: 50px;
+  width: 100%;
+  background: #10131c;
+  border: 1px solid #313539;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+  padding: 0 6px;
+  position: relative;
+}
+
+form > div > .fa-eye {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+}
+
+.eye-close:after {
+  content: '/';
+  position: absolute;
+  font-size: 1.4em;
+  top: -4px;
+  left: 5px;
+}
+  
+form > div > input {
+  height: 45px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#login-btn {
+  height: 45px;
+  width: 100%;
+  margin-top: 22px;
+  border-radius: 3px;
+  border: 1px solid #313539;
+  background: #5621cf;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 1px;
+  color: #919599;
+  font-weight: 800;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.signup-div {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.signup-div > a {
+  margin-left: 5px;
+  color: #5621cf;
+  cursor: pointer;
+  user-select: none;
+}

@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: #c1c5c9;
+}
+
+a:hover {
+  color: #c1c5c9;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #10131c;
+}
+
+#message-icon {
+  text-decoration: none;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background: #212529;
+  border: 1px solid #313539;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+body > span {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+  color: #c1c5c9;
+}
+
+body > span > a {
+  font-size: 1.4em;
+  margin: 0 12px;
+  text-decoration: none;
+  
+}
+
+.box-container {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box-container > div {
+  height: 350px;
+  width: 400px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #313539;
+  margin-top: 12px;
+}
+
+.box-container > div:last-child {
+  margin-bottom: 12px;
+}
+
+.box-container > .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #c1c5c9;
+}
+
+.box-container > .box > img {
+  height: 145px;
+  width: 145px;
+  transform: scale(2);
+}
+
+.box-container > .box > span {
+  width: 80%;
+  text-align: center;
+}

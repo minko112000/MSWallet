@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > span {
+  height: 40px;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.search-bar {
+  height: 45px;
+  width: 98%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid #313539;
+  margin-top: 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar > input {
+  width: 90%;
+  height: 100%;
+  font-size: 1.2em;
+}
+
+.search-bar > i {
+  font-size: 1.3em;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+
+.result-box-container {
+  height: calc(100% - 109px);
+  width: 98%;
+  margin-top: 12px;
+  overflow: scroll;
+  padding-bottom: 12px;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  display: none;
+}
+
+.result-box-container > div {
+  flex: none;
+  height: 425px;
+  width: 100%;
+  border-radius: 22px;
+  margin-top: 12px;
+  border: 1px solid #313539;
+}
+
+.not-found-box {
+  border: none !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  transition: all .5s;
+}
+
+.not-found-box > img {
+  height: 300px;
+  width: 300px;
+}
+
+.not-found-box > h4 {
+  letter-spacing: 1.2px;
+}
