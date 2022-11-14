@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #bbb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+
+body {
+  background: #10131c;
+  color: #c7c7c7;
+}
+
+#group-chat-room {
+  height: 100vh;
+  width: 100%;
+  background: #10131c;
+}
+
+#group-chat-room > span {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #10131c;
+}
+
+#group-chat-room > span > i {
+  font-size: 2em;
+}
+
+#messages-container {
+  height: calc(100% - 150px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+}
+
+#messages-container > h1 {
+  color: #dd1d1d;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.o-i {
+  width: 100%;
+  margin-top: 22px
+}
+
+.o-i > div {
+  width: 65%;
+}
+
+.o-i > div > span {
+  z-index: 9;
+  background: #4621cf;
+  font-size: 1em;
+  padding: 6px;
+  display: inline-block;
+  word-break: break-word;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.outer-msg-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.outer-msg-box > span {
+  border-radius: 12px 0 12px 12px;
+  float: right;
+}
+  
+.inner-msg-box > span {
+  background: none !important;
+  border: 1px solid #313539;
+  border-radius: 12px 12px 12px 0;
+}
+
+
+#input-field {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #10131c;
+  z-index: 10;
+  position: relative;
+}
+
+#message {
+  height: 45px;
+  width: 85%;
+  background: none;
+  outline: none;
+  font-size: 1.3em;
+  color: #c7c7c7;
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid #313539;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#message-send {
+  font-size: 2em;
+  color: #10131c;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+              -2px -2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #4621cf;
+}

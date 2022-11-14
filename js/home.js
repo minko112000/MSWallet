@@ -8,7 +8,9 @@ const updateNowBtn = document.querySelector('#update-now-btn')
 const shortcutIcons = document.querySelectorAll('.shortcut-icon')
 const bucket = document.querySelector('.bucket')
 
-
+$('#chat-icon').click(function () {
+  location.href = 'group_chat.php'
+})
 
 const updateAlertBoxShow = () => {
   mainContainer.style.opacity = .5
